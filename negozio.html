@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Negozio VIP — EthernityMC</title>
+  <meta name="description" content="Acquista il tuo pacchetto VIP su EthernityMC. Vantaggi esclusivi, comandi speciali e molto altro." />
+  <link rel="icon" type="image/png" href="assets/img/logo.png" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<canvas id="particles"></canvas>
+
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <img src="assets/img/logo.png" alt="EthernityMC" />
+      <span>EthernityMC</span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="negozio.html" class="active">Negozio</a></li>
+      <li><a href="vota.html">Vota</a></li>
+      <li><a href="https://discord.gg/ethernitymc" target="_blank" class="nav-cta">Discord</a></li>
+    </ul>
+    <button class="nav-menu-btn" id="menuBtn">☰</button>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="container">
+    <span class="section-tag">Supporta il server</span>
+    <h1>Negozio <span class="gradient-text">VIP</span></h1>
+    <p>Scegli il tuo pacchetto, inserisci il tuo username Minecraft e ottieni subito i benefici in gioco. I vantaggi si applicano su <strong>Survival</strong> e <strong>Vanilla+</strong>.</p>
+  </div>
+</div>
+
+<section class="shop-section">
+  <div class="container">
+
+    <div class="shop-grid">
+
+      <!-- VIP -->
+      <div class="vip-card">
+        <div class="vip-header">
+          <div class="vip-rank" style="color:#44FF88">⬥ VIP</div>
+          <div class="vip-sub">Il pacchetto d'ingresso</div>
+          <div class="vip-price">
+            <span class="amount" style="color:#44FF88">4.99</span><span class="period">€ / una tantum</span>
+          </div>
+        </div>
+        <ul class="vip-features">
+          <li><span class="check" style="color:#44FF88">✦</span> Prefisso verde <strong>[VIP]</strong> in chat e TAB</li>
+          <li><span class="check" style="color:#44FF88">✦</span> 3 home impostabili (Survival + Vanilla+)</li>
+          <li><span class="check" style="color:#44FF88">✦</span> Kit VIP esclusivo al login</li>
+          <li><span class="check" style="color:#44FF88">✦</span> 1 chiave cassa al giorno</li>
+          <li><span class="check" style="color:#44FF88">✦</span> /hat — indossa qualsiasi blocco</li>
+          <li><span class="check" style="color:#44FF88">✦</span> /nick — cambia il tuo nome in chat</li>
+        </ul>
+        <a href="https://discord.gg/ethernitymc" target="_blank" class="btn btn-outline vip-buy" style="color:#44FF88;border-color:#44FF88">Acquista VIP →</a>
+      </div>
+
+      <!-- VIP+ -->
+      <div class="vip-card">
+        <div class="vip-header">
+          <div class="vip-rank" style="color:#44CCFF">⬥ VIP+</div>
+          <div class="vip-sub">Più spazio, più comandi</div>
+          <div class="vip-price">
+            <span class="amount" style="color:#44CCFF">8.99</span><span class="period">€ / una tantum</span>
+          </div>
+        </div>
+        <ul class="vip-features">
+          <li><span class="check" style="color:#44CCFF">✦</span> Prefisso azzurro <strong>[VIP+]</strong> in chat e TAB</li>
+          <li><span class="check" style="color:#44CCFF">✦</span> 5 home impostabili</li>
+          <li><span class="check" style="color:#44CCFF">✦</span> Kit VIP+ esclusivo al login</li>
+          <li><span class="check" style="color:#44CCFF">✦</span> 2 chiavi cassa al giorno</li>
+          <li><span class="check" style="color:#44CCFF">✦</span> /workbench — tavolo da craft ovunque</li>
+          <li><span class="check" style="color:#44CCFF">✦</span> /enderchest — ender chest ovunque</li>
+          <li><span class="check" style="color:#44CCFF">✦</span> /nick avanzato con colori</li>
+        </ul>
+        <a href="https://discord.gg/ethernitymc" target="_blank" class="btn btn-outline vip-buy" style="color:#44CCFF;border-color:#44CCFF">Acquista VIP+ →</a>
+      </div>
+
+      <!-- VIP++ -->
+      <div class="vip-card featured">
+        <div class="featured-badge">Popolare</div>
+        <div class="vip-header">
+          <div class="vip-rank" style="color:#CC44FF">⬥ VIP++</div>
+          <div class="vip-sub">Comandi premium</div>
+          <div class="vip-price">
+            <span class="amount" style="color:#CC44FF">14.99</span><span class="period">€ / una tantum</span>
+          </div>
+        </div>
+        <ul class="vip-features">
+          <li><span class="check" style="color:#CC44FF">✦</span> Prefisso viola <strong>[VIP++]</strong> in chat e TAB</li>
+          <li><span class="check" style="color:#CC44FF">✦</span> 7 home impostabili</li>
+          <li><span class="check" style="color:#CC44FF">✦</span> Nome colorato in chat</li>
+          <li><span class="check" style="color:#CC44FF">✦</span> Kit VIP++ esclusivo al login</li>
+          <li><span class="check" style="color:#CC44FF">✦</span> 3 chiavi cassa al giorno</li>
+          <li><span class="check" style="color:#CC44FF">✦</span> /feed — ricarica la fame istantaneamente</li>
+          <li><span class="check" style="color:#CC44FF">✦</span> /ptime — ora del giorno personale</li>
+          <li><span class="check" style="color:#CC44FF">✦</span> /back — torna all'ultima posizione</li>
+        </ul>
+        <a href="https://discord.gg/ethernitymc" target="_blank" class="btn btn-primary vip-buy">Acquista VIP++ →</a>
+      </div>
+
+      <!-- MVP -->
+      <div class="vip-card">
+        <div class="vip-header">
+          <div class="vip-rank" style="color:#FFD700">⬥ MVP</div>
+          <div class="vip-sub">Esperienza completa</div>
+          <div class="vip-price">
+            <span class="amount" style="color:#FFD700">19.99</span><span class="period">€ / una tantum</span>
+          </div>
+        </div>
+        <ul class="vip-features">
+          <li><span class="check" style="color:#FFD700">✦</span> Prefisso oro <strong>[MVP]</strong> in chat e TAB</li>
+          <li><span class="check" style="color:#FFD700">✦</span> 10 home impostabili</li>
+          <li><span class="check" style="color:#FFD700">✦</span> Chat colorata completa</li>
+          <li><span class="check" style="color:#FFD700">✦</span> Kit MVP esclusivo al login</li>
+          <li><span class="check" style="color:#FFD700">✦</span> 4 chiavi cassa al giorno</li>
+          <li><span class="check" style="color:#FFD700">✦</span> /heal — ricarica la vita istantaneamente</li>
+          <li><span class="check" style="color:#FFD700">✦</span> /anvil — incudine ovunque</li>
+          <li><span class="check" style="color:#FFD700">✦</span> Accesso al Warp VIP esclusivo</li>
+        </ul>
+        <a href="https://discord.gg/ethernitymc" target="_blank" class="btn btn-outline vip-buy" style="color:#FFD700;border-color:#FFD700">Acquista MVP →</a>
+      </div>
+
+      <!-- KING -->
+      <div class="vip-card">
+        <div class="vip-header">
+          <div class="vip-rank" style="color:#FF5555">⬥ KING</div>
+          <div class="vip-sub">Domina il server</div>
+          <div class="vip-price">
+            <span class="amount" style="color:#FF5555">24.99</span><span class="period">€ / una tantum</span>
+          </div>
+        </div>
+        <ul class="vip-features">
+          <li><span class="check" style="color:#FF5555">✦</span> Prefisso rosso <strong>[KING]</strong> in chat e TAB</li>
+          <li><span class="check" style="color:#FF5555">✦</span> 15 home impostabili</li>
+          <li><span class="check" style="color:#FF5555">✦</span> /fly su Survival e Vanilla+</li>
+          <li><span class="check" style="color:#FF5555">✦</span> Kit KING esclusivo al login</li>
+          <li><span class="check" style="color:#FF5555">✦</span> 5 chiavi cassa al giorno</li>
+          <li><span class="check" style="color:#FF5555">✦</span> /fix — ripara l'oggetto in mano</li>
+          <li><span class="check" style="color:#FF5555">✦</span> /top — teletrasporto in superficie</li>
+          <li><span class="check" style="color:#FF5555">✦</span> /near — vedi i giocatori vicini</li>
+        </ul>
+        <a href="https://discord.gg/ethernitymc" target="_blank" class="btn btn-outline vip-buy" style="color:#FF5555;border-color:#FF5555">Acquista KING →</a>
+      </div>
+
+      <!-- GOD -->
+      <div class="vip-card featured">
+        <div class="featured-badge">Top Tier</div>
+        <div class="vip-header">
+          <div class="vip-rank" style="background:linear-gradient(135deg,#CC44FF,#FF66DD);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">✦ GOD</div>
+          <div class="vip-sub">Il massimo del server</div>
+          <div class="vip-price">
+            <span class="amount" style="background:linear-gradient(135deg,#CC44FF,#FF66DD);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">32.99</span><span class="period">€ / una tantum</span>
+          </div>
+        </div>
+        <ul class="vip-features">
+          <li><span class="check" style="color:#CC44FF">✦</span> Prefisso <strong>rainbow animato</strong> [GOD]</li>
+          <li><span class="check" style="color:#CC44FF">✦</span> 20 home impostabili</li>
+          <li><span class="check" style="color:#CC44FF">✦</span> /fly completo su tutti i server</li>
+          <li><span class="check" style="color:#CC44FF">✦</span> Kit GOD esclusivo al login</li>
+          <li><span class="check" style="color:#CC44FF">✦</span> 6 chiavi cassa al giorno</li>
+          <li><span class="check" style="color:#CC44FF">✦</span> /repair all — ripara tutto l'inventario</li>
+          <li><span class="check" style="color:#CC44FF">✦</span> /nick completo con formattazioni</li>
+          <li><span class="check" style="color:#CC44FF">✦</span> Priorità di login</li>
+          <li><span class="check" style="color:#CC44FF">✦</span> Accesso anticipato alle beta feature</li>
+        </ul>
+        <a href="https://discord.gg/ethernitymc" target="_blank" class="btn btn-primary vip-buy">Acquista GOD →</a>
+      </div>
+
+    </div>
+
+    <!-- METODI PAGAMENTO -->
+    <div class="payment-box">
+      <h3>💳 Metodi di pagamento</h3>
+      <p>I pagamenti con carta e LTC sono automatizzati — il rank viene assegnato entro pochi secondi.<br>Per PayPal apri un ticket su Discord specificando username e pacchetto scelto.</p>
+      <div class="payment-methods">
+        <span class="pay-tag auto">✅ Carta di credito/debito — Automatico</span>
+        <span class="pay-tag auto">✅ LTC (Litecoin) — Automatico</span>
+        <span class="pay-tag">
+          <span>PayPal</span>
+          <span style="color:var(--muted);font-size:12px">— Apri ticket Discord</span>
+        </span>
+      </div>
+    </div>
+
+    <div class="vote-note" style="margin-top:12px">
+      ⚠️ I rank sono permanenti e validi su tutti i server del network. Acquistando un rank accetti che EthernityMC è un server amatoriale privato. In caso di problemi apri un ticket su <a href="https://discord.gg/ethernitymc" target="_blank" style="color:var(--purple)">Discord</a>.
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="index.html" class="footer-logo">
+          <img src="assets/img/logo.png" alt="EthernityMC" />
+          <span>EthernityMC</span>
+        </a>
+        <p class="footer-desc">Il server Minecraft italiano per chi vuole di più.</p>
+        <div class="footer-socials">
+          <a href="https://discord.gg/ethernitymc" target="_blank" class="social-btn" title="Discord">💬</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Navigazione</h4>
+        <a href="index.html">Home</a>
+        <a href="negozio.html">Negozio VIP</a>
+        <a href="vota.html">Vota il server</a>
+        <a href="https://discord.gg/ethernitymc" target="_blank">Discord</a>
+      </div>
+      <div class="footer-col">
+        <h4>Server</h4>
+        <a href="#">IP: play.ethernitymc.it</a>
+        <a href="#">Versione: 1.21.4</a>
+        <a href="#">Survival · Vanilla+ · Minigames</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 EthernityMC · Tutti i diritti riservati</p>
+      <p>Non affiliato con Mojang o Microsoft</p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

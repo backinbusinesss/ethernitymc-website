@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EthernityMC — Server Minecraft Italiano</title>
+  <meta name="description" content="EthernityMC è il server Minecraft italiano con Survival, Vanilla+ e Minigames. Unisciti alla community!" />
+  <link rel="icon" type="image/png" href="assets/img/logo.png" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<canvas id="particles"></canvas>
+
+<!-- NAV -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <img src="assets/img/logo.png" alt="EthernityMC" />
+      <span>EthernityMC</span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="negozio.html">Negozio</a></li>
+      <li><a href="vota.html">Vota</a></li>
+      <li><a href="https://discord.gg/ethernitymc" target="_blank" class="nav-cta">Discord</a></li>
+    </ul>
+    <button class="nav-menu-btn" id="menuBtn" aria-label="Menu">☰</button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <div class="hero-badge">
+      <span class="pulse-dot"></span>
+      Server online · 1.21.4
+    </div>
+    <h1>Benvenuto su<br><span class="gradient-text">EthernityMC</span></h1>
+    <p>Il server Minecraft italiano che unisce avventura, comunità e competizione. Survival, Vanilla+ e Minigames ti aspettano.</p>
+    <div class="hero-ip" id="copyIP" title="Clicca per copiare">
+      <span>play.ethernitymc.it</span>
+      <span class="copy-hint" id="copyHint">📋 Copia IP</span>
+    </div>
+    <div class="hero-buttons">
+      <a href="negozio.html" class="btn btn-primary">✦ Acquista VIP</a>
+      <a href="https://discord.gg/ethernitymc" target="_blank" class="btn btn-discord">Discord</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat">
+        <div class="stat-value" id="c-players">130+</div>
+        <div class="stat-label">Giocatori</div>
+      </div>
+      <div class="stat">
+        <div class="stat-value">3</div>
+        <div class="stat-label">Modalità</div>
+      </div>
+      <div class="stat">
+        <div class="stat-value">24/7</div>
+        <div class="stat-label">Online</div>
+      </div>
+      <div class="stat">
+        <div class="stat-value">1.21</div>
+        <div class="stat-label">Versione</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MODALITÀ -->
+<section class="modes">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Cosa offriamo</span>
+      <h2>Scegli la tua <span class="gradient-text">avventura</span></h2>
+      <p>Tre modalità di gioco pensate per ogni tipo di player, dalla sfida al puro divertimento.</p>
+    </div>
+    <div class="modes-grid">
+
+      <div class="mode-card">
+        <div class="mode-icon">⛏️</div>
+        <h3>Survival</h3>
+        <p>La modalità classica potenziata. Costruisci, esplora e sopravvivi in un mondo generato appositamente. Proteggi il tuo territorio e collabora con la community.</p>
+        <div class="mode-tags">
+          <span class="tag">Protezione terreni</span>
+          <span class="tag">Economía</span>
+          <span class="tag">Clan</span>
+          <span class="tag">RTP</span>
+        </div>
+      </div>
+
+      <div class="mode-card">
+        <div class="mode-icon">🌿</div>
+        <h3>Vanilla+</h3>
+        <p>Minecraft come non l'hai mai giocato. Tutti i vantaggi del vanilla con aggiunte qualitative: shop, quest, casse, economia e tanto altro senza stravolgere l'esperienza originale.</p>
+        <div class="mode-tags">
+          <span class="tag">Shop</span>
+          <span class="tag">Quiz & premi</span>
+          <span class="tag">Casse</span>
+          <span class="tag">VIP Fly</span>
+        </div>
+      </div>
+
+      <div class="mode-card">
+        <div class="mode-icon">🎮</div>
+        <h3>Minigames</h3>
+        <p>Staccati dal survival e divertiti con i minigiochi competitivi. TNT Run, Hide & Seek e Parkour sono solo l'inizio — nuove modalità in arrivo costantemente.</p>
+        <div class="mode-tags">
+          <span class="tag">TNT Run</span>
+          <span class="tag">Hide & Seek</span>
+          <span class="tag">Parkour</span>
+          <span class="tag">Classifica</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- VIP TEASER -->
+<section class="vip-teaser">
+  <div class="container">
+    <div class="vip-teaser-inner">
+      <span class="section-tag">Supporta il server</span>
+      <h2>Porta la tua esperienza<br>al <span class="gradient-text">livello successivo</span></h2>
+      <p>Sei pacchetti VIP con vantaggi esclusivi, comandi speciali e cosmesi uniche. Da VIP a GOD, c'è qualcosa per ogni budget.</p>
+      <div class="vip-preview">
+        <span class="rank-pill" style="color:#44FF88;border-color:rgba(68,255,136,0.4);background:rgba(68,255,136,0.08)">VIP — 4.99€</span>
+        <span class="rank-pill" style="color:#44CCFF;border-color:rgba(68,204,255,0.4);background:rgba(68,204,255,0.08)">VIP+ — 8.99€</span>
+        <span class="rank-pill" style="color:#CC44FF;border-color:rgba(204,68,255,0.4);background:rgba(204,68,255,0.08)">VIP++ — 14.99€</span>
+        <span class="rank-pill" style="color:#FFD700;border-color:rgba(255,215,0,0.4);background:rgba(255,215,0,0.08)">MVP — 19.99€</span>
+        <span class="rank-pill" style="color:#FF5555;border-color:rgba(255,85,85,0.4);background:rgba(255,85,85,0.08)">KING — 24.99€</span>
+        <span class="rank-pill" style="background:linear-gradient(135deg,rgba(204,68,255,0.15),rgba(255,102,221,0.15));border-color:rgba(204,68,255,0.4);color:#FF66DD">GOD — 32.99€</span>
+      </div>
+      <a href="negozio.html" class="btn btn-primary">Scopri tutti i pacchetti →</a>
+    </div>
+  </div>
+</section>
+
+<!-- DISCORD CTA -->
+<section class="discord-cta">
+  <div class="container">
+    <div class="discord-inner">
+      <div>
+        <h2>💬 Unisciti alla community</h2>
+        <p>Oltre 500 membri su Discord. Annunci, eventi, supporto e molto altro — tutto in un posto solo.</p>
+      </div>
+      <a href="https://discord.gg/ethernitymc" target="_blank" class="btn btn-discord" style="font-size:16px;padding:14px 32px;">
+        Entra nel Discord
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="index.html" class="footer-logo">
+          <img src="assets/img/logo.png" alt="EthernityMC" />
+          <span>EthernityMC</span>
+        </a>
+        <p class="footer-desc">Il server Minecraft italiano per chi vuole di più. Survival, Vanilla+ e Minigames in un unico network.</p>
+        <div class="footer-socials">
+          <a href="https://discord.gg/ethernitymc" target="_blank" class="social-btn" title="Discord">💬</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Navigazione</h4>
+        <a href="index.html">Home</a>
+        <a href="negozio.html">Negozio VIP</a>
+        <a href="vota.html">Vota il server</a>
+        <a href="https://discord.gg/ethernitymc" target="_blank">Discord</a>
+      </div>
+      <div class="footer-col">
+        <h4>Server</h4>
+        <a href="#">IP: play.ethernitymc.it</a>
+        <a href="#">Versione: 1.21.4</a>
+        <a href="#">Survival</a>
+        <a href="#">Vanilla+</a>
+        <a href="#">Minigames</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 EthernityMC · Tutti i diritti riservati</p>
+      <p>Non affiliato con Mojang o Microsoft</p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
