@@ -49,6 +49,21 @@ if (copyBtn) {
   });
 }
 
+// ── SCROLL FADE IN ──────────────────────────────────────────
+(function () {
+  const targets = document.querySelectorAll('.mode-card, .step-card, .vip-card, .vote-card, .section-header');
+  targets.forEach(el => el.classList.add('fade-in'));
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((e, i) => {
+      if (e.isIntersecting) {
+        setTimeout(() => e.target.classList.add('visible'), i * 80);
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  targets.forEach(el => io.observe(el));
+})();
+
 // ── PARTICLES ────────────────────────────────────────────────
 (function () {
   const canvas = document.getElementById('particles');
