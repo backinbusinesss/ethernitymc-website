@@ -1,3 +1,20 @@
+// ── LIVE PLAYER COUNT ────────────────────────────────────────
+(function () {
+  const el = document.getElementById('c-players');
+  if (!el) return;
+  fetch('https://api.mcsrvstat.us/3/play.ethernitymc.it')
+    .then(r => r.json())
+    .then(data => {
+      if (data.online) {
+        el.textContent = data.players?.online ?? 0;
+      } else {
+        el.textContent = 'Offline';
+        el.style.fontSize = '20px';
+      }
+    })
+    .catch(() => { el.textContent = '—'; });
+})();
+
 // ── NAVBAR SCROLL ──────────────────────────────────────────
 const navbar = document.getElementById('navbar');
 window.addEventListener('scroll', () => {
